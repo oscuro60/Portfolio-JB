@@ -1,9 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio | Promotion to Professor of Computer Technology</title>
+    <style>
+        :root {
+            --hgtc-blue: #0f2c59; 
+            --tech-blue: #0284c7; 
+            --bg-slate: #f8fafc;
+            --text-dark: #0f172a;
+            --border-gray: #e2e8f0;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--bg-slate);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        header {
+            background: linear-gradient(135deg, var(--hgtc-blue), #0b1e3f);
+            color: white; padding: 4rem 2rem; text-align: center;
+            border-bottom: 4px solid var(--tech-blue);
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header .subtitle { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+        header .dept { font-size: 1rem; color: var(--tech-blue); font-weight: 600; text-transform: uppercase; margin-top: 0.75rem; }
+        section {
+            background: white; padding: 2.5rem; margin-bottom: 2rem;
+            border-radius: 8px; border: 1px solid var(--border-gray);
+        }
+        h2 { color: var(--hgtc-blue); margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid var(--bg-slate); padding-bottom: 0.75rem; }
+        .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; }
+        .stat-card { background: var(--bg-slate); padding: 1.25rem; border-radius: 6px; text-align: center; border-top: 3px solid var(--tech-blue); }
+        .stat-num { font-size: 2rem; font-weight: 750; color: var(--hgtc-blue); }
+        .stat-label { font-size: 0.8rem; color: #64748b; text-transform: uppercase; font-weight: 600; }
+        .focus-statement { background-color: #f0fdf4; border-left: 4px solid #22c55e; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 0 6px 6px 0; }
+        ul { padding-left: 1.25rem; }
+        li { margin-bottom: 1rem; }
+        .artifact { display: inline-block; font-size: 0.75rem; background: #e0f2fe; color: #0369a1; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; margin-left: 0.5rem; font-family: monospace; }
+    </style>
 </head>
 <body>
-    <h1>Hello, world! Welcome to my website.</h1>
+
+    <header>
+        <h1>YOUR NAME, M.S.</h1>
+        <div class="subtitle">Portfolio for Promotion to Full Professor</div>
+        <div class="dept">Department of Computer Technology | HGTC</div>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Executive Performance Summary</h2>
+            <div class="dashboard">
+                <div class="stat-card">
+                    <div class="stat-num">Exemplary</div>
+                    <div class="stat-label">FPMS Evaluation Baseline</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">3+ Courses</div>
+                    <div class="stat-label">Curriculum Frameworks Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">92%</div>
+                    <div class="stat-label">Avg. Technical Retain Rate</div>
+                </div>
+            </div>
+            <p>This application documents structural contributions to Horry-Georgetown Technical College’s computer science paths during my tenure as Associate Professor. Focus areas showcase the engineering of modern labs, alignment with commercial validation pathways (CompTIA, Cisco, AWS, or Microsoft), and proactive retention methods designed to reduce early student drop-out rates in complex sequence tracking.</p>
+        </section>
+
+        <section>
+            <h2>1. Teaching Excellence & Technical Lab Innovation</h2>
+            <div class="focus-statement">
+                <strong>Instructional Strategy:</strong> Bridging theoretical computational concepts with applied, hands-on architectural workflows using secure sandboxed environments.
+            </div>
+            <ul>
+                <li><strong>Lab Infrastructure Optimization:</strong> Overhauled the virtualization stack for [Course Name, e.g., CPT 257], establishing multi-tenant sandboxes that allow isolated software testing without network disruption. <span class="artifact">Binder Doc A-1</span></li>
+                <li><strong>Course Redesign Lifecycle:</strong> Spearheaded the updates for [Course Number], mapping internal competencies directly to current industrial certification revisions to maintain workforce alignment. <span class="artifact">Syllabus Update B</span></li>
+                <li><strong>Retention Interventions:</strong> Developed modular video code walk-throughs and diagnostic self-tests that isolated common technical bottlenecks, keeping drop-fail-withdraw (DFW) counts significantly below baseline division targets.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Institutional Leadership & Departmental Service</h2>
+            <div class="focus-statement">
+                <strong>Leadership Scope:</strong> Guiding departmental curriculum audits, contributing to campus governance systems, and ensuring program-specific tech criteria compliance.
+            </div>
+            <ul>
+                <li><strong>Advisory Board Integration:</strong> Acted as the primary faculty liaison to the Computer Technology Advisory Committee, incorporating critical feedback from local South Carolina technology employers into capstone expectations.</li>
+                <li><strong>Institutional Governance:</strong> Elected and served actively on the [Name of Committee], auditing institutional software rollouts and cross-departmental delivery tech frameworks. <span class="artifact">Minutes Excerpt C</span></li>
+                <li><strong>Assessment & Accreditation Support:</strong> Compiled systemic student evaluation outcomes data required for continuous institutional quality assurance evaluations and program health checks.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Professional Currency & Technical Credentials</h2>
+            <div class="focus-statement">
+                <strong>Industry Relevance:</strong> Continually updating professional validation credentials to properly train students for fluid enterprise landscapes.
+            </div>
+            <ul>
+                <li><strong>Advanced Certifications Maintained:</strong> Successfully earned / renewed active sector certifications, including [Insert your certs, e.g., CompTIA Security+, CCNA, AWS Cloud Practitioner, or CISSP]. <span class="artifact">Cert Copies D-4</span></li>
+                <li><strong>Technical Development Training:</strong> Completed [X] credit-equivalent hours of deep structural instruction focusing on [Emerging field, e.g., Cloud architecture, Automation, or Modern Scripting methodologies].</li>
+                <li><strong>Regional Mentorship Footprint:</strong> Organized / facilitated an active community outreach tech pipeline event or mentored student teams preparing for local collegiate cyber defense and coding metrics.</li>
+            </ul>
+        </section>
+
+    </div>
+
 </body>
 </html>
